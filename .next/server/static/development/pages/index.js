@@ -105,7 +105,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Modal", function() { return Modal; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _Portal__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Portal */ "./components/Portal.js");
+/* harmony import */ var _ToastContainer__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./ToastContainer */ "./components/ToastContainer.js");
 var _jsxFileName = "/Users/daracarolan/Code/with-portals-app/components/Modal.js";
 
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
@@ -177,7 +177,7 @@ function (_React$Component) {
           lineNumber: 22
         },
         __self: this
-      }, "Open Portal"), this.state.opened && react__WEBPACK_IMPORTED_MODULE_0__["createElement"](_Portal__WEBPACK_IMPORTED_MODULE_1__["Portal"], {
+      }, "Open Portal"), this.state.opened && react__WEBPACK_IMPORTED_MODULE_0__["createElement"](_ToastContainer__WEBPACK_IMPORTED_MODULE_1__["ToastContainer"], {
         selector: "#toast",
         __source: {
           fileName: _jsxFileName,
@@ -213,16 +213,16 @@ function (_React$Component) {
 
 /***/ }),
 
-/***/ "./components/Portal.js":
-/*!******************************!*\
-  !*** ./components/Portal.js ***!
-  \******************************/
-/*! exports provided: Portal */
+/***/ "./components/ToastContainer.js":
+/*!**************************************!*\
+  !*** ./components/ToastContainer.js ***!
+  \**************************************/
+/*! exports provided: ToastContainer */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Portal", function() { return Portal; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ToastContainer", function() { return ToastContainer; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ "react-dom");
@@ -247,18 +247,18 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
 
 
 
-var Portal =
+var ToastContainer =
 /*#__PURE__*/
 function (_React$Component) {
-  _inherits(Portal, _React$Component);
+  _inherits(ToastContainer, _React$Component);
 
-  function Portal() {
-    _classCallCheck(this, Portal);
+  function ToastContainer() {
+    _classCallCheck(this, ToastContainer);
 
-    return _possibleConstructorReturn(this, _getPrototypeOf(Portal).apply(this, arguments));
+    return _possibleConstructorReturn(this, _getPrototypeOf(ToastContainer).apply(this, arguments));
   }
 
-  _createClass(Portal, [{
+  _createClass(ToastContainer, [{
     key: "componentDidMount",
     value: function componentDidMount() {
       this.element = document.querySelector(this.props.selector);
@@ -274,7 +274,7 @@ function (_React$Component) {
     }
   }]);
 
-  return Portal;
+  return ToastContainer;
 }(react__WEBPACK_IMPORTED_MODULE_0___default.a.Component);
 
 /***/ }),

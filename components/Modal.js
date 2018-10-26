@@ -1,6 +1,6 @@
 import * as React from "react";
 
-import { Portal } from "./Portal";
+import { ToastContainer } from "./ToastContainer";
 
 export class Modal extends React.Component {
   constructor() {
@@ -23,14 +23,14 @@ export class Modal extends React.Component {
           Open Portal
         </button>
         {this.state.opened && (
-          <Portal selector="#toast">
+          <ToastContainer selector="#toast">
             <div>
               <p>here we are now!</p>
               <button type="button" onClick={this.close}>
                 Close Portal
               </button>
             </div>
-          </Portal>
+          </ToastContainer>
         )}
       </React.Fragment>
     );
